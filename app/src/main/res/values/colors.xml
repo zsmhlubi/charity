@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#81b622</color>
+    <color name="colorMain">#0059B1</color>
+    <color name="colorSecondary">#A2A9BD</color>
+    <color name="White">#ffffff</color>
+    <color name="colorThird">#ed7700</color>
+    <color name="DonaterListalternateRowColor">#f9f6f6</color>
+    <color name="Gold">#FFD700</color>
+    <color name="Silver">#C0C0C0</color>
+    <color name="Bronze">#b08d57</color>
+</resources>

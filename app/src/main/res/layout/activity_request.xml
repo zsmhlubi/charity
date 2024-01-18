@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textViewRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Select a Resource to Request"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/request_choose_searchBar"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#38373734"
+        android:hint="Search Resources"
+        android:maxLines="1"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRequest"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <ListView
+        android:id="@+id/request_choose_resourceList"
+        android:layout_width="414dp"
+
+        android:layout_height="298dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/request_choose_searchBar" />
+
+    <TextView
+        android:id="@+id/textViewRequest1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Quantity"
+        android:textColor="#DDAB15"
+        app:layout_constraintTop_toBottomOf="@+id/request_choose_resourceList"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/request_choose_resourceQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRequest1"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <Button
+        android:id="@+id/request_choose_donateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/login_button"
+        android:text="Request Resource"
+        app:layout_constraintTop_toBottomOf="@+id/request_choose_resourceQuantity"
+        tools:layout_editor_absoluteX="-16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

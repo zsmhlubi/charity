@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Charity</string>
+
+    <plurals name="DonationMessage">
+        <item quantity="one">You are donating %1$d item of %2$s!</item>
+        <item quantity="other">You are donating %1$d items of %2$s!</item>
+    </plurals>
+
+
+</resources>

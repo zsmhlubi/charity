@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signup_layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1"
+    android:background="@drawable/signup_background">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signup_cardview_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/signup_layout_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:background="#FFFFFF"
+            android:foregroundGravity="center_vertical|center"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/signup_textView_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Email "
+                android:textColor="#022BF6"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#000000"
+                android:textColorLink="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/etSignupSurname"
+                app:layout_constraintTop_toBottomOf="@+id/etSignupSurname" />
+
+            <EditText
+                android:id="@+id/etSignupEmail"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textColor="#020202"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#000000"
+                android:textColorLink="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/signup_textView_email"
+                app:layout_constraintTop_toBottomOf="@+id/signup_textView_email" />
+
+            <EditText
+                android:id="@+id/etSignupPhone"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:textColor="#020202"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#000000"
+                android:textColorLink="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/signup_textView_number"
+                app:layout_constraintTop_toBottomOf="@+id/signup_textView_number" />
+
+            <TextView
+                android:id="@+id/signup_textView_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Password"
+                android:textColor="#022BF6"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#000000"
+                android:textColorLink="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/etSignupPhone"
+                app:layout_constraintTop_toBottomOf="@+id/etSignupPhone" />
+
+            <TextView
+                android:id="@+id/signup_textView_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Phone Number"
+                android:textColor="#022BF6"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#000000"
+                android:textColorLink="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/etSignupEmail"
+                app:layout_constraintTop_toBottomOf="@+id/etSignupEmail" />
+
+            <EditText
+                android:id="@+id/etSignupPassword"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColor="#020202"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#000000"
+                android:textColorLink="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/signup_textView_password"
+                app:layout_constraintTop_toBottomOf="@+id/signup_textView_password" />
+
+            <EditText
+                android:id="@+id/etSignupSurname"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#020202"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#000000"
+                android:textColorLink="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/signup_textView_firstname"
+                app:layout_constraintTop_toBottomOf="@+id/signup_textView_firstname" />
+
+            <TextView
+                android:id="@+id/signup_textView_firstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Surname"
+                android:textColor="#022BF6"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#000000"
+                android:textColorLink="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/etSignupFirstName"
+                app:layout_constraintTop_toBottomOf="@+id/etSignupFirstName" />
+
+            <TextView
+                android:id="@+id/tvLoginError"
+                android:layout_width="290dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textColor="#F30606"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/etSignupPassword"
+                app:layout_constraintTop_toBottomOf="@+id/etSignupPassword" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="4dp"
+                android:text="First Name"
+                android:textColor="#022BF6"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etSignupFirstName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvSignupLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:clickable="true"
+        android:text="Log in"
+        android:textColor="#247297"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnSignup"
+        app:layout_constraintStart_toStartOf="@+id/btnSignup" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="190dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/signup_button_signup"
+        android:text="Sign up"
+        android:textColor="#FFFEFE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvSignupLogin"
+        app:layout_constraintEnd_toEndOf="@+id/signup_cardview_main"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@+id/signup_cardview_main"
+        app:layout_constraintTop_toBottomOf="@+id/signup_cardview_main"
+        app:layout_constraintVertical_bias="0.692" />
+
+    <TextView
+        android:id="@+id/textView_signup"
+        android:layout_width="181dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="SIGN UP"
+        android:textColor="#FBCB6A"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/signup_cardview_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

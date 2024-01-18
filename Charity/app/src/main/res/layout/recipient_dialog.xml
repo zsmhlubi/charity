@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="#CA3030">
+
+    <TextView
+        android:id="@+id/tvRecipientDialogFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRecipientDialogSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/tvRecipientDialogFirstName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRecipientDialogBio"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingRight="20dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/tvRecipientDialogFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecipientDialogFirstName" />
+
+    <EditText
+        android:id="@+id/etRecipientDialogDonateQuantity"
+        android:layout_width="99dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecipientDialogBio" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Donate items: "
+        app:layout_constraintBottom_toBottomOf="@+id/etRecipientDialogDonateQuantity"
+        app:layout_constraintEnd_toStartOf="@+id/etRecipientDialogDonateQuantity"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRecipientDialogRequestedQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:text="Requested"
+        app:layout_constraintBottom_toBottomOf="@+id/tvRecipientDialogRequestedQuantity"
+        app:layout_constraintEnd_toStartOf="@+id/tvRecipientDialogRequestedQuantity" />
+
+    <Button
+        android:id="@+id/btnDialogDonte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:background="#FFFFFF"
+        android:text="Donate"
+        app:layout_constraintBottom_toBottomOf="@+id/etRecipientDialogDonateQuantity"
+        app:layout_constraintStart_toEndOf="@+id/etRecipientDialogDonateQuantity" />
+
+    <TextView
+        android:id="@+id/tvdialogError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

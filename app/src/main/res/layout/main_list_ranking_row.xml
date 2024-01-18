@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ranking_row_layout"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:alpha="1"
+    android:background="#979DBA">
+
+    <TextView
+        android:id="@+id/ranking_row_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        android:layout_marginStart="20dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/ranking_row_rank"
+        app:layout_constraintTop_toTopOf="@+id/ranking_row_rank" />
+
+    <TextView
+        android:id="@+id/ranking_row_surname"
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        android:layout_marginStart="4dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/ranking_row_firstname"
+        app:layout_constraintTop_toTopOf="@+id/ranking_row_firstname" />
+
+    <TextView
+        android:id="@+id/ranking_row_donated"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Total Donations:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ranking_row_rank"
+        app:layout_constraintStart_toEndOf="@+id/ranking_row_rank" />
+
+    <TextView
+        android:id="@+id/ranking_row_donationNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ranking_row_donated"
+        app:layout_constraintStart_toEndOf="@+id/ranking_row_donated" />
+
+    <TextView
+        android:id="@+id/ranking_row_rank"
+        android:layout_width="71dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:autoSizeStepGranularity="2sp"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:shadowColor="#FFFFFF"
+        android:text="TextView"
+        android:textSize="40sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeMinTextSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
